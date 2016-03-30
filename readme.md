@@ -9,8 +9,10 @@
 
 ### /admin/product
 - Add/modify products. Please make sure to edit the product and add options before it'll be displayed in product list.
+
 ### /product/list
 - Show all products with (size/color) options. You can click any product and add it to cart with options.
+
 ### /cart
 - Show cart, modify cart and buy. After puchase, a queued event triggered and will processed by listener to send email. As mail address/mail gate way is not configuared, it'll create a log at /tmp/php.log inside vagrant container.
 
