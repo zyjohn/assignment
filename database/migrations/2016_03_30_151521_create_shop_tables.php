@@ -50,7 +50,7 @@ class CreateShopTables extends Migration
                 ->onDelete('cascade');
             $cart->integer('quantity');
             $cart->timestamps();
-            $cart->index(['user_id','product_id','option_id']);
+            $cart->unique(['user_id','product_id','option_id']);
         });
     }
 
