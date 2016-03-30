@@ -2,19 +2,22 @@
 
 ## Installation
 
-### Clone this repo, install homestead vagrant and map ~/Code to cloned folder
-### In vagrant, run ```php artisan migrate --force``` to initial database.
+- Clone this repo, install homestead vagrant and map ~/Code to cloned folder
+- In vagrant, run ```php artisan migrate --force``` to initial database.
 
 ## Main routes
 
-### /admin/product - Add/modify products. Please make sure to edit the product and add options before it'll be displayed in product list.
-### /product/list - Show all products with (size/color) options. You can click any product and add it to cart with options.
-### /cart - Show cart, modify cart and buy. After puchase, a queued event triggered and will processed by listener to send email. As mail address/mail gate way is not configuared, it'll create a log at /tmp/php.log inside vagrant container.
+### /admin/product
+- Add/modify products. Please make sure to edit the product and add options before it'll be displayed in product list.
+### /product/list
+- Show all products with (size/color) options. You can click any product and add it to cart with options.
+### /cart
+- Show cart, modify cart and buy. After puchase, a queued event triggered and will processed by listener to send email. As mail address/mail gate way is not configuared, it'll create a log at /tmp/php.log inside vagrant container.
 
 ## Testing
 
-### In vagrant ~/Code run ```composer dump-autoload``` to initial the seeds classes.
-### run ```phpunit```
+- In vagrant ~/Code run ```composer dump-autoload``` to initial the seeds classes.
+- run ```phpunit```
 
 
 # About Laravel PHP Framework
